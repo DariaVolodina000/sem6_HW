@@ -32,15 +32,19 @@ int Count(int[] arr)
     return count;
 }
 
+void FillArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)   // Заполняем масси
+    {
+        arr[i] = IntPutInt("Введите число");
+    }
+
+}
 
 int size = IntPutInt("Сколько чисел будем вводить? ");
 
 int[] line = new int[size];     // создаем массив
-
-for (int i = 0; i < line.Length; i++)   // Заполняем масси
-{
-    line[i] = IntPutInt("Введите число");
-}
+FillArray(line);
 
 Console.WriteLine("Такой массив у нас получился: ");
 PrintArray(line);
