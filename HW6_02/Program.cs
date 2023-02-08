@@ -13,13 +13,17 @@ int IntPutInt(string message)
     return number;
 }
 
+double k1 = IntPutInt("введите точку k1");
+double b1 = IntPutInt("введите точку b1");
+double k2 = IntPutInt("введите точку k2");
+double b2 = IntPutInt("введите точку b2");
 
-int k1 = IntPutInt("введите точку k1");
-int b1 = IntPutInt("введите точку b1");
-int k2 = IntPutInt("введите точку k2");
-int b2 = IntPutInt("введите точку b2");
+double x = (-b2 + b1) / (-k1 + k2);
+double y = k2 * x + b2;
 
-int Result(int k, int b)
-{
-    int y = k*
-}
+Console.WriteLine($"две прямые пересекутся с координатами X: {x}, Y: {y}");
+
+
+
+
+
